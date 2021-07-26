@@ -24,11 +24,11 @@ func (s studentMgr) addStudent(){
 		stuid int64
 		stuname string
 	)
-	fmt.Print("请输入学生id")
+	fmt.Print("请输入学生id:")
 	fmt.Scanln(&stuid)
 
-	fmt.Print("请输入学生姓名")
-	fmt.Scanln(stuname)
+	fmt.Print("请输入学生姓名:")
+	fmt.Scanln(&stuname)
 	newStu:=student{
 		id:stuid,
 		name:stuname,
